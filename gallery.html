@@ -12,7 +12,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark pink"> 
         <div class="container"> 
             <a class="navbar-brand" href="gallery.html">Crown Yourself</a> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+            <button class="hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
                 <span class="navbar-toggler-icon"></span> 
             </button> 
             <div class="collapse navbar-collapse" id="navbarNav"> 
@@ -40,25 +40,164 @@
         </div> 
     </nav> 
     </header>
-    <main class="container my-5">
-<div class="container">
-<h2 class="text-center mb-4">INSPIRATIONAL IMAGES & QUOTES</h2>
-<div class="row justify-content-center">
-<div class="col-md-4 mb-4">
-<div class="card">
-<img src="Master.jpg" class="card-img-top" alt="Master"/>
-<div class="card-body">
-   <div class="col-md-4 mb-4">
-<div class="card">
-<img src="favor.jpg" class="card-img-top" alt="Favor"/>
-<div class="card-body"> 
-</div>
+    
+  <section class="images">
+    <div class="inspiration-container">
+      <h2>INSPIRATIONAL IMAGES & QUOTES</h2>
+    </div>
+    <div class="image-container">
+      <div class="image-card">
+        <img src="7 rings.jpg" alt="7 rings">
+      </div>
+        
+      <div class="image-card">
+        <img src="Jeremiah.jpg" alt="Jeremiah">
+      </div>
+
+      <div class="image-card">
+        <img src="Master.png" alt="Master">
+      </div>
+
+        <div class="image-card">
+          <img src="believe in yourself.png" alt="believe in yourself">
+        </div>
+
+      <div class="image-card">
+        <img src="celebrate yourself.jpg" alt="celebrate yourself">
+      </div>
+
+      <div class="image-card">
+        <img src="character vs wealth.jpg" alt="character vs wealth">
+      </div>
+
+      <div class="image-card">
+        <img src="cherries.png" alt="cherries">
+      </div>
+
+      <div class="image-card">
+        <img src="daily affirmations.jpg" alt="affirmations">
+      </div>
+
+      <div class="image-card">
+        <img src="deserve.jpg" alt="deserve">
+      </div>
+
+      <div class="image-card">
+        <img src="favor.jpg" alt="favor">
+      </div>
+
+      <div class="image-card">
+        <img src="donkey and lion.jpg" alt="donkey and lion">
+      </div>  
+
+      <div class="image-card">
+        <img src="dreaming.png" alt="dreams">
+      </div>
+
+      <div class="image-card">
+        <img src="faith.png" alt="faith">
+      </div>
+
+      <div class="images-card">
+        <img src="healing art.png" alt="healing art">
+      </div>
+
+      <div class="image-card">
+        <img src="healing grace.png" alt="healing grace">
+      </div>
+
+      <div class="image-card">
+        <img src="i rise.jpg" alt="i rise">
+      </div>
+
+      <div class="image-card">
+        <img src="isaiah.png" alt="isaiah">
+      </div>
+
+      <div class="image-card">
+        <img src="love yourself.png" alt="love yourself">
+      </div>
+
+      <div class="image-card">
+        <img src="negativity.jpg" alt="no negativity">
+      </div>
+
+      <div class="image-card">
+        <img src="no competition.jpg" alt="no competition">
+      </div>  
+
+       <div class="image-card">
+        <img src="old hands.jpg" alt="holding hands">
+      </div>  
+
+        <div class="image-card">
+        <img src="she is.jpg" alt="girlie">
+      </div>  
+
+        <div class="image-card">
+        <img src="path.jpg" alt="path">
+      </div>  
+
+        <div class="image-card">
+        <img src="priority.jpg" alt="priority">
+      </div>  
+
+        <div class="image-card">
+        <img src="queen.jpg" alt="queen">
+      </div>  
+
+        <div class="image-card">
+        <img src="remember who you wanted to be.jpg" alt="who you are">
+      </div>  
+
+        <div class="image-card">
+        <img src="resilience.jpg" alt="resilience">
+      </div>  
+
+        <div class="image-card">
+        <img src="rock lifting.jpg" alt="lift yourself">
+      </div>  
+
+        <div class="image-card">
+        <img src="stickers.jpg" alt="empowering stickers">
+      </div>  
+
+        <div class="image-card">
+        <img src="winning.jpg" alt="winning">
+      </div>  
+
+        <div class="image-card">
+        <img src="wisdom.jpg" alt="wise words">
+      </div>  
+
+        <div class="image-card">
+        <img src="working out.jpg" alt="everything will work out">
+      </div>  
+
+        <div class="image-card">
+        <img src="you vs you.jpg" alt="self reflection">
+      </div>    
+    </div>  
+  </section>
     </main>
     <footer>
         <p>&copy;2026 CROWN YOURSELF. All rights reserved</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>  
+   <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelectorAll('.navbar a');
+    const navMenu = document.querySelector('.navbar ul');
+    // Toggle menu on hamburger click
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+    // Close menu when a navigation link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+      });
+    });
+  </script>
 </body>       
 </html>
 
