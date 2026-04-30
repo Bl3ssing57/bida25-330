@@ -73,5 +73,20 @@ main a {
   color: #ff22e9;
   font-weight: bold;
 }
- 
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+``
 
