@@ -89,4 +89,85 @@ main a {
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 ``
+/* ============================
+   BLOG PAGE STYLES ONLY
+============================ */
 
+/* ---------- PAGE BACKGROUND ---------- */
+body {
+    background-color: #f6ecff;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ---------- PAGE TITLE ---------- */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #4b006e;
+    margin-bottom: 30px;
+}
+
+/* ---------- BLOG CONTAINER SPACING ---------- */
+.page-section {
+    padding: 50px 20px;
+}
+
+/* ---------- BLOG CARD ---------- */
+.card-box {
+    background-color: white;
+    border: 2px solid #e6a57e; /* rose-gold */
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+/* Hover effect like Wix */
+.card-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+/* ---------- BLOG TITLE ---------- */
+.blog-title {
+    font-size: 1.5rem;
+    color: #4b006e;
+    margin-bottom: 15px;
+}
+
+/* ---------- BLOG TEXT ---------- */
+.card-box p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* ---------- BLOG SPACING ---------- */
+.card-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- OPTIONAL META INFO ---------- */
+.blog-meta {
+    font-size: 0.85rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* ---------- MOBILE RESPONSIVENESS ---------- */
+@media (max-width: 768px) {
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .blog-title {
+        font-size: 1.3rem;
+    }
+
+    .page-section {
+        padding: 30px 15px;
+    }
+
+}
